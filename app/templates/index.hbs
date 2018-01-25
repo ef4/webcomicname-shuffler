@@ -1,0 +1,23 @@
+<h1>Webcomicname Shuffler</h1>
+
+<p><a href="http://webcomicname.com/">Webcomicname</a> is the genius work of Alex Norris. And it's usually just as funny if you randomize the middle pane.</p>
+
+{{#with (random-choice model) as |first|}}
+{{#with (random-choice model) as |second|}}
+
+  <div class="shuffler">
+    <div class="mask one">
+      <img src={{first.url}} >
+    </div>
+
+    <div class="mask two">
+      <img src={{second.url}} >
+    </div>
+
+    <div class="mask three">
+      <img src={{first.url}} >
+    </div>
+  </div>
+
+{{/with}}
+{{/with}}
