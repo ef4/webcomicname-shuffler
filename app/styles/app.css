@@ -1,3 +1,7 @@
+.comic-area {
+    max-width: 1245px;
+}
+
 .shuffler {
     position: relative;
     min-height: 600px;
